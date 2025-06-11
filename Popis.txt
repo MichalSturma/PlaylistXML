@@ -1,0 +1,1 @@
+Cílém mé semestrální práce je evidence playlistů a pisníček v nich. V playlistu budu mít zákládní informace o něm, jako je název, popis, autor playlistu, hodnoce, atd... U písniček budu mít jméno a autora, délku, žánr, pozici v žebříčku BillboardHot100 a podobné. 

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="playlist.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<playlistEvidence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://playlistyprovsechny.cz/evidence playlist.xsd"
+ xmlns="http://playlistyprovsechny.cz/evidence">
+    <autori>
+        <autor id="1">
+            <jmeno>Michal Šturma</jmeno>
+            <oblibeneZanry>RB</oblibeneZanry>
+            <oblibeneZanry>Hip-Hop</oblibeneZanry>
+        </autor>
+        <autor id="2">
+            <jmeno>Filip Ortel</jmeno>
+            <oblibeneZanry>Jazz</oblibeneZanry>
+            <oblibeneZanry>Soul</oblibeneZanry>
+        </autor>
+        <autor id="3">
+            <jmeno>Eva Nováková</jmeno>
+            <oblibeneZanry>Klasická hudba</oblibeneZanry>
+            <oblibeneZanry>Jazz</oblibeneZanry>
+        </autor>
+        <autor id="4">
+            <jmeno>Ladislav Dveře</jmeno>
+            <oblibeneZanry>IDM</oblibeneZanry>
+            <oblibeneZanry>Trip-House</oblibeneZanry>
+        </autor>
+    </autori>
+    
+    <playlist>
+        <metadata>
+            <nazevPlaylistu>Nejlepší playlist</nazevPlaylistu>
+            <popis>Nejnovější hity pro říjen 2024</popis>
+            <datumVytvoreni>2024-01-21</datumVytvoreni>
+            <autorId>1</autorId>
+            <pocetPisnicek>3</pocetPisnicek>
+            <hodnoceni>2</hodnoceni>
+            <pocetUlozeni>238</pocetUlozeni>
+            <pocetPosluchacu>28</pocetPosluchacu>
+            <obalPlaylistu>https://oladino.com/wp-content/uploads/2023/05/MR-oladinocom-svg060523t004-65202315754-1-600x600.jpeg</obalPlaylistu>
+            <tagy>
+                <tag>hit</tag>
+                <tag>trendy</tag>
+                <tag>RB</tag>
+            </tagy>
+            <typPlaylistu>Veřejný</typPlaylistu>
+        </metadata>
+        <skladby>
+            <skladba pozice="45">
+                <nazev>Solo</nazev>
+                <interpret>Frank Ocean</interpret>
+                <album>Blonde</album>
+                <delka>5:45</delka>
+                <zanr>RB</zanr>
+                <datumVydani>2020-08-20</datumVydani>
+                <datumPridani>2024-09-09</datumPridani>
+                <nahravaciSpolecnost>Boys Don't Cry</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba pozice="22">
+                <nazev>u</nazev>
+                <interpret>Kendrick Lamar</interpret>
+                <album>To Pimp A Butterfly</album>
+                <delka>4:28</delka>
+                <zanr>Hip-Hop</zanr>
+                <datumVydani>2015-03-15</datumVydani>
+                <datumPridani>2024-09-09</datumPridani>
+                <nahravaciSpolecnost>Top Dawg Entertainment</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba>
+                <nazev>Stay High</nazev>
+                <interpret>Childish Gambino</interpret>
+                <album>3.15.20</album>
+                <delka>3:50</delka>
+                <zanr>RB</zanr>
+                <datumVydani>2020-03-22</datumVydani>
+                <datumPridani>2024-09-10</datumPridani>
+                <nahravaciSpolecnost>ATO Records</nahravaciSpolecnost>
+                <textDostupny></textDostupny>
+            </skladba>
+        </skladby>
+    </playlist>
+    
+    <playlist>
+        <metadata>
+            <nazevPlaylistu>Podzimní nálada</nazevPlaylistu>
+            <popis>Výběr oblíbených písní pro klidné večery</popis>
+            <datumVytvoreni>2024-10-20</datumVytvoreni>
+            <autorId>2</autorId>
+            <pocetPisnicek>4</pocetPisnicek>
+            <hodnoceni>5</hodnoceni>
+            <pocetUlozeni>600</pocetUlozeni>
+            <pocetPosluchacu>123</pocetPosluchacu>
+            <obalPlaylistu>https://m.media-amazon.com/images/I/51c+sNfXb9L._UF894,1000_QL80_.jpg</obalPlaylistu>
+            <tagy>
+                <tag>podzim</tag>
+                <tag>klid</tag>
+            </tagy>
+            <typPlaylistu>Veřejný</typPlaylistu>
+        </metadata>
+        <skladby>
+            <skladba pozice="10">
+                <nazev>Autumn Leaves</nazev>
+                <interpret>Miles Davis</interpret>
+                <album>Somethin' Else</album>
+                <delka>5:58</delka>
+                <zanr>Jazz</zanr>
+                <datumVydani>1958-03-09</datumVydani>
+                <datumPridani>2024-10-10</datumPridani>
+                <nahravaciSpolecnost>Blue Note Records</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba>
+                <nazev>Valerie</nazev>
+                <interpret>Amy Winehouse</interpret>
+                <album>Back to Black</album>
+                <delka>3:54</delka>
+                <zanr>Soul</zanr>
+                <datumVydani>2007-10-22</datumVydani>
+                <datumPridani>2024-10-15</datumPridani>
+                <nahravaciSpolecnost>Island Records</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba pozice="35">
+                <nazev>Strange Fruit</nazev>
+                <interpret>Nina Simone</interpret>
+                <album>Pastel Blues</album>
+                <delka>3:34</delka>
+                <zanr>Blues</zanr>
+                <datumVydani>1965-09-01</datumVydani>
+                <datumPridani>2024-10-18</datumPridani>
+                <nahravaciSpolecnost>Philips Records</nahravaciSpolecnost>
+                <textDostupny></textDostupny>
+            </skladba>
+            <skladba>
+                <nazev>Feeling Good</nazev>
+                <interpret>Michael Bublé</interpret>
+                <album>It's Time</album>
+                <delka>5:11</delka>
+                <zanr>Jazz Pop</zanr>
+                <datumVydani>2005-02-08</datumVydani>
+                <datumPridani>2024-10-22</datumPridani>
+                <nahravaciSpolecnost>143 Records</nahravaciSpolecnost>
+                <textDostupny></textDostupny>
+            </skladba>
+        </skladby>
+    </playlist>
+    
+    <playlist>
+        <metadata>
+            <nazevPlaylistu>Relaxační večer</nazevPlaylistu>
+            <popis>Poklidné melodie pro relaxaci</popis>
+            <datumVytvoreni>2024-09-15</datumVytvoreni>
+            <autorId>3</autorId>
+            <pocetPisnicek>2</pocetPisnicek>
+            <hodnoceni>2</hodnoceni>
+            <pocetUlozeni>1562</pocetUlozeni>
+            <pocetPosluchacu>652</pocetPosluchacu>
+            <obalPlaylistu>https://i.scdn.co/image/ab67616d0000b273f2c7155f97edfbc3c1d1af6d</obalPlaylistu>
+            <tagy>
+                <tag>relax</tag>
+                <tag>klasická hudba</tag>
+                <tag>pohoda</tag>
+            </tagy>
+            <typPlaylistu>Veřejný</typPlaylistu>
+        </metadata>
+        <skladby>
+            <skladba>
+                <nazev>Clair de Lune</nazev>
+                <interpret>Claude Debussy</interpret>
+                <album>Impressionist Works</album>
+                <delka>5:23</delka>
+                <zanr>Klasická hudba</zanr>
+                <datumVydani>1905-05-15</datumVydani>
+                <datumPridani>2024-09-16</datumPridani>
+                <nahravaciSpolecnost>Classical Records</nahravaciSpolecnost>
+                <textDostupny></textDostupny>
+            </skladba>
+            <skladba pozice="88">
+                <nazev>Spring</nazev>
+                <interpret>Antonio Vivaldi</interpret>
+                <album>The Four Seasons</album>
+                <delka>3:44</delka>
+                <zanr>Klasická hudba</zanr>
+                <datumVydani>1725-01-01</datumVydani>
+                <datumPridani>2024-09-16</datumPridani>
+                <nahravaciSpolecnost>Baroque Classics</nahravaciSpolecnost>
+                <textDostupny></textDostupny>
+            </skladba>
+        </skladby>
+    </playlist>
+    
+    <playlist>
+        <metadata>
+            <nazevPlaylistu>Fitness playlist</nazevPlaylistu>
+            <popis>Hudba, co tě nabudí</popis>
+            <datumVytvoreni>2024-11-01</datumVytvoreni>
+            <autorId>4</autorId>
+            <pocetPisnicek>6</pocetPisnicek>
+            <hodnoceni>1</hodnoceni>
+            <pocetUlozeni>3</pocetUlozeni>
+            <pocetPosluchacu>1</pocetPosluchacu>
+            <obalPlaylistu>https://i1.sndcdn.com/artworks-9p5qdC8b17onzdHu-bhyIWw-t500x500.jpg</obalPlaylistu>
+            <tagy>
+                <tag>fitnes</tag>
+                <tag>energie</tag>
+                <tag>elektronická hudba</tag>
+            </tagy>
+            <typPlaylistu>Soukromý</typPlaylistu>
+        </metadata>
+        <skladby>
+            <skladba>
+                <nazev>Everything In Its Right Place</nazev>
+                <interpret>Radiohead</interpret>
+                <album>Kid A</album>
+                <delka>4:11</delka>
+                <zanr>Ambient</zanr>
+                <datumVydani>2000-10-02</datumVydani>
+                <datumPridani>2024-11-05</datumPridani>
+                <nahravaciSpolecnost>Parlophone</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba pozice="50">
+                <nazev>Strobe</nazev>
+                <interpret>Deadmau5</interpret>
+                <album>For Lack of a Better Name</album>
+                <delka>10:37</delka>
+                <zanr>Progressive House</zanr>
+                <datumVydani>2009-09-22</datumVydani>
+                <datumPridani>2024-11-05</datumPridani>
+                <nahravaciSpolecnost>Mau5trap</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba>
+                <nazev>Xtal</nazev>
+                <interpret>Aphex Twin</interpret>
+                <album>Selected Ambient Works 85-92</album>
+                <delka>4:54</delka>
+                <zanr>Ambient</zanr>
+                <datumVydani>1992-02-12</datumVydani>
+                <datumPridani>2024-11-05</datumPridani>
+                <nahravaciSpolecnost>Warp Records</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba pozice="22">
+                <nazev>Teardrop</nazev>
+                <interpret>Massive Attack</interpret>
+                <album>Mezzanine</album>
+                <delka>5:31</delka>
+                <zanr>Trip-Hop</zanr>
+                <datumVydani>1998-04-20</datumVydani>
+                <datumPridani>2024-11-06</datumPridani>
+                <nahravaciSpolecnost>Virgin Records</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba>
+                <nazev>Window</nazev>
+                <interpret>Aphex Twin</interpret>
+                <album>Windowlicker</album>
+                <delka>6:07</delka>
+                <zanr>IDM</zanr>
+                <datumVydani>1999-03-22</datumVydani>
+                <datumPridani>2024-11-06</datumPridani>
+                <nahravaciSpolecnost>Warp Records</nahravaciSpolecnost>
+                <textDostupny>en</textDostupny>
+            </skladba>
+            <skladba>
+                <nazev>Technologic</nazev>
+                <interpret>Daft Punk</interpret>
+                <album>Human After All</album>
+                <delka>4:44</delka>
+                <zanr>Electronic</zanr>
+                <datumVydani>2005-03-14</datumVydani>
+                <datumPridani>2024-11-06</datumPridani>
+                <nahravaciSpolecnost>Virgin Records</nahravaciSpolecnost>
+                <textDostupny></textDostupny>
+            </skladba>
+        </skladby>
+    </playlist>
+</playlistEvidence>

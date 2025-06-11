@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://playlistyprovsechny.cz/evidence"
+    xmlns:pl="http://playlistyprovsechny.cz/evidence"
+    targetNamespace="http://playlistyprovsechny.cz/evidence"
+    elementFormDefault="qualified">
+    
+    <xs:element name="playlistEvidence" type="playlistEvidenceType">
+        <xs:key name="autorKey">
+            <xs:selector xpath="pl:autori/pl:autor"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        
+        <xs:keyref name="autorReference" refer="autorKey">
+            <xs:selector xpath="pl:playlist/pl:metadata"/>
+            <xs:field xpath="pl:autorId"/>
+        </xs:keyref>
+    </xs:element>
+    
+    <xs:complexType name="playlistEvidenceType">
+        <xs:sequence>
+            <xs:element name="autori" type="autoriType"/>
+            <xs:element name="playlist" type="playlistType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="autoriType">
+        <xs:sequence>
+            <xs:element name="autor" type="autorType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="autorType">
+        <xs:sequence>
+            <xs:element name="jmeno" type="zadnyPrazdnyStringType"/>
+            <xs:element name="oblibeneZanry" type="zadnyPrazdnyStringType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="playlistType">
+        <xs:sequence>
+            <xs:element name="metadata" type="metadataType"/>
+            <xs:element name="skladby" type="skladbyType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="metadataType">
+        <xs:sequence>
+            <xs:element name="nazevPlaylistu" type="zadnyPrazdnyStringType"/>
+            <xs:element name="popis" type="zadnyPrazdnyStringType"/>
+            <xs:element name="datumVytvoreni" type="xs:date"/>
+            <xs:element name="autorId" type="xs:positiveInteger"/>
+            <xs:element name="pocetPisnicek" type="xs:nonNegativeInteger"/>
+            <xs:element name="hodnoceni" type="hodnoceniType"/>
+            <xs:element name="pocetUlozeni" type="xs:nonNegativeInteger"/>
+            <xs:element name="pocetPosluchacu" type="xs:nonNegativeInteger"/>
+            <xs:element name="obalPlaylistu" type="xs:anyURI"/> 
+            <xs:element name="tagy" type="tagyType"/>
+            <xs:element name="typPlaylistu" type="typPlaylistuType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="hodnoceniType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="typPlaylistuType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Veřejný"/>
+            <xs:enumeration value="Soukromý"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="tagyType">
+        <xs:sequence>
+            <xs:element name="tag" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="skladbyType">
+        <xs:sequence>
+            <xs:element name="skladba" type="skladbaType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="skladbaType">
+        <xs:sequence>
+            <xs:element name="nazev" type="zadnyPrazdnyStringType"/>
+            <xs:element name="interpret" type="zadnyPrazdnyStringType"/>
+            <xs:element name="album" type="zadnyPrazdnyStringType"/>
+            <xs:element name="delka" type="delkaType"/>
+            <xs:element name="zanr" type="zadnyPrazdnyStringType"/>
+            <xs:element name="datumVydani" type="xs:date"/>
+            <xs:element name="datumPridani" type="xs:date"/>
+            <xs:element name="nahravaciSpolecnost" type="zadnyPrazdnyStringType"/>
+            <xs:element name="textDostupny" type="textDostupnyType"/>
+        </xs:sequence>
+        <xs:attribute name="pozice" type="poziceType" use="optional"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="textDostupnyType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="|.{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="zadnyPrazdnyStringType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="delkaType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{1,2}:\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="poziceType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>
